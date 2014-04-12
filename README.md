@@ -121,47 +121,47 @@ The development [source code for this plugin is available on Facebook's GitHub a
 
 ## Frequently Asked Questions
 
-# How do I sign up for a Facebook application ID for my website? 
+### How do I sign up for a Facebook application ID for my website? 
 
 You may create a new Facebook application or edit your existing Facebook application through the [Facebook Developers application interface](https://developers.facebook.com/apps/). You may first need to signup for a Facebook Developer account.
 
-# I am unable to save my Facebook application ID and secret
+### I am unable to save my Facebook application ID and secret
 
 Some webmasters have reported issues saving Facebook application ID and secret information in the Facebook settings page. These inputted values are verified with Facebook servers before saving, requiring an HTTPS request to Facebook servers. Some sites experiencing issues have identified their server's bundled SSL certificates as an issue; returning false for the `https_ssl_verify` filter used by the WordPress HTTP class may help fix server-to-server communication issues if updating your cURL or other libraries is not an option.
 
-# How do I change the image that appears for my posts shared on Facebook?
+### How do I change the image that appears for my posts shared on Facebook?
 
 The plugin generates [Open Graph protocol](http://ogp.me/) markup for your site's webpages including a explicitly-specified images generated from the [post thumbnail](http://codex.wordpress.org/Post_Thumbnails), [attached images](http://codex.wordpress.org/Inserting_Images_into_Posts_and_Pages), or gallery shortcode. Your plugin or theme may define additional images through the `fb_meta_tags` filter. If an image or images already exists your additional image may be used as an alternate for stories shared through a pasted link. Unattended story summaries such as a Like Button click use the first defined image. [support sticky](http://wordpress.org/support/topic/customize-open-graph-protocol-for-your-site-or-network)
 
-# I do not like the summary of my posts shared to Facebook 
+### I do not like the summary of my posts shared to Facebook 
 
 Facebook generates a story summary for pasted links and new posts sent to your Timeline or Page based on metadata found on your page. The Facebook plugin for WordPress generates Open Graph protocol metadata to assist Facebook's understanding of your webpages. The [Facebook URL debugger](https://developers.facebook.com/tools/debug) provides a view into Facebook's representation of your webpage and relevant extracted metadata. Test URLs of interest in the debugger to better understand how your page might be represented on Facebook.
 
-# I do not see an option to associate my Facebook account from my WordPress profile page
+### I do not see an option to associate my Facebook account from my WordPress profile page
 
 Make sure your Facebook application is properly configured for Facebook Login including the correct app domain and website URL. The Facebook debug settings submenu item in your WordPress administrative interface highlights some common issues.
 
-# How do I moderate comments and add reviewers? 
+### How do I moderate comments and add reviewers? 
 
 The [Comment Moderation Tool](https://developers.facebook.com/tools/comments) allows you to customize your Facebook application's moderators, blacklisted words, external logins, and more.
 
-# Does Facebook Comments work with my existing WordPress comments? 
+### Does Facebook Comments work with my existing WordPress comments? 
 
 The [Comments Box social plugin](https://developers.facebook.com/docs/plugins/comments/) is meant to replace the WordPress commenting system with a more social, client-side experience. We do not currently support synchronizing comments stored on Facebook with comments stored in your WordPress database. Posts with existing WordPress comments will display those comments followed by the Facebook Comments Box.
 
-# Why do comments on a post published to my Facebook Timeline or Page not appear inside Facebook Comments Box on my post page? 
+### Why do comments on a post published to my Facebook Timeline or Page not appear inside Facebook Comments Box on my post page? 
 
 The [Facebook Comments Box social plugin](https://developers.facebook.com/docs/plugins/comments/) is a separate commenting system associated with a URL regardless of your authors' decision to post to his or her Facebook Timeline or your site's Facebook Page.
 
-# What additional configuration steps do I need to complete to enable an Open Graph action for my Facebook application? 
+### What additional configuration steps do I need to complete to enable an Open Graph action for my Facebook application? 
 
 Visit the [Facebook plugin for WordPress getting started page](https://developers.facebook.com/docs/wordpress/) for more details and screenshots of each step in the process. You will need to create an Open Graph action-object pair for your Facebook application: publish an article. You will need to submit the new publish action for approval with support for [action capabilities](https://developers.facebook.com/docs/submission-process/opengraph/guidelines/action-properties/ "Facebook action capabilities") allowing custom messages on an author's Timeline, mentioning Facebook friends and Facebook pages within that message, and marking the new post as explicitly shared.
 
-# I set up my social plugin but nothing happened 
+### I set up my social plugin but nothing happened 
 
 Some social plugins require a URL representing a specific Facebook feature: the Follow button accepts a person's Timeline URL; the Like Box accepts a Page URL. Try configuring similar parameters through the appropriate [Facebook social plugins](https://developers.facebook.com/docs/plugins/) page to view a preview of what to expect on your WordPress site after a successful configuration.
 
-# My site content is Spanish. Why does Facebook display social plugin text in English? 
+### My site content is Spanish. Why does Facebook display social plugin text in English? 
 
 The Facebook plugin for WordPress examines [your WordPress locale](http://codex.wordpress.org/Function_Reference/get_locale) and chooses the most appropriate match from a list of [Facebook locales](https://developers.facebook.com/docs/internationalization/). You can act directly on the `fb_locale` filter for more exact control.
 
