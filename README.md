@@ -2,7 +2,7 @@
 
 ## Why is this on github?
 
-* **For Fun* why else?
+* **For Fun** why else?
 * So I will be more familiar with how github works.
 * I never use github and I wanted to put something up here.
 * YOLO.
