@@ -15,24 +15,24 @@
 
 # Facebook
 
-### Contributors: Facebook, automattic, niallkennedy, mattwkelly, rgharpuray, ngfeldman, jamesgpearce, ravi.grover, danielbachhuber, gigawats, eosgood, Otto42, colmdoyle, zazinteractive
+Contributors: Facebook, automattic, niallkennedy, mattwkelly, rgharpuray, ngfeldman, jamesgpearce, ravi.grover, danielbachhuber, gigawats, eosgood, Otto42, colmdoyle, zazinteractive
 
 
-### Tags: Facebook, comments, social, friends, like, like button, social plugins, facebook platform, page, posts, sidebar, plugin, open graph, publish Facebook
+Tags: Facebook, comments, social, friends, like, like button, social plugins, facebook platform, page, posts, sidebar, plugin, open graph, publish Facebook
 
 
-### Requires at least: 3.3
+Requires at least: 3.3
 
 
-### Tested up to: 3.9
+Tested up to: 3.9
 
 
-### License: GPLv2
+License: GPLv2
 
 
-### License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-### Stable tag: 1.5.5
+Stable tag: 1.5.5
 
 Add Facebook social plugins and the ability to publish new posts to a Facebook Timeline or Facebook Page. Official Facebook plugin.
 
@@ -88,7 +88,7 @@ The development [source code for this plugin is available on Facebook's GitHub a
 
 # Custom actions & filters
 
-## Actions
+### Actions
 
 * `facebook_settings_before_header_$hook_suffix` - add content to a settings page before the main page header section
 * `facebook_settings_after_header_$hook_suffix` - add content to a settings page after the main page header section
@@ -96,7 +96,7 @@ The development [source code for this plugin is available on Facebook's GitHub a
 * `facebook_comment_form_before` - comment form [pluggable action](http://codex.wordpress.org/Function_Reference/comment_form#Pluggable_actions "WordPress comment form pluggable action") replacing the WordPress `comment_form()` equivalent action `comment_form_before`
 * `facebook_comment_form_after` - comment form [pluggable action](http://codex.wordpress.org/Function_Reference/comment_form#Pluggable_actions "WordPress comment form pluggable action") replacing the WordPress `comment_form()` equivalent action `comment_form_after`
 
-# Filters 
+### Filters 
 
 * `facebook_features` - limit the plugin features available on your site
 * `facebook_jssdk_init_options` - customize arguments sent to the [FB.init](https://developers.facebook.com/docs/reference/javascript/FB.init/) function of the Facebook JavaScript SDK
